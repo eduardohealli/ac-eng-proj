@@ -13,7 +13,7 @@ type Projeto = {
 
 const DURATION = 5000; // Tempo em milissegundos para trocar a imagem (5 segundos)
 
-export function Card2({
+export function Card({
   titulo,
   imagens,
 }: {
@@ -161,67 +161,6 @@ export function Card2({
   );
 }
 
-function Card({
-  titulo,
-  imagens,
-  categorias,
-}: {
-  titulo: string;
-  descricao: string;
-  imagens: string[];
-  categorias: string[];
-}) {
-  const [indiceAtual, setIndiceAtual] = useState(0);
-
-  useEffect(() => {
-    if (!imagens || imagens.length <= 1) return;
-
-    const timer = setInterval(() => {
-      setIndiceAtual((prevIndex) => (prevIndex + 1) % imagens.length);
-    }, 8000);
-
-    return () => clearInterval(timer);
-  }, []);
-
-  return (
-    <div className="@container group relative w-full aspect-16/10 overflow-hidden rounded-md">
-      <div className="absolute inset-0 w-full h-full ">
-        {imagens.map((src, index) => (
-          <img
-            key={index}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-2000 ${
-              index === indiceAtual
-                ? "opacity-100 z-10" // Imagem ativa fica visível e no topo
-                : "opacity-0 z-0" // Imagem inativa fica invisível
-            }`}
-            src={src}
-            alt={titulo}
-          />
-        ))}
-      </div>
-
-      <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent z-10 transition-all duration-500 group-hover:from-black/95"></div>
-      <div className="relative z-20 flex flex-col justify-end h-full p-4 @sm:p-10 @md:p-10">
-        <div className="space-y-1 pb-1">
-          <h3 className="text-xl font-semibold text-white @md:text-2xl">
-            {titulo}
-          </h3>
-          <div className="flex flex-row gap-2">
-            {categorias.map((cat, indice) => (
-              <span
-                className="inline-flex items-center gap-1 text-sm text-gray-300 before:content-[''] before:w-1 before:h-1 before:rounded-full before:bg-white"
-                key={indice}
-              >
-                {cat}
-              </span>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export default function SecaoPortifolio() {
   const [categoriaSelecionada, setCategoriaSelecionada] = useState("Todos");
   const [projetos, setProjetos] = useState<Projeto[]>([]);
@@ -289,7 +228,7 @@ export default function SecaoPortifolio() {
               key={index}
               className={index === 0 ? "col-span-1 md:col-span-3" : ""}
             >
-              <Card2
+              <Card
                 titulo={proj.titulo}
                 imagens={proj.imagens}
                 categorias={proj.categorias}

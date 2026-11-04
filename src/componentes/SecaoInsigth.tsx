@@ -12,7 +12,7 @@ const imagens: string[] = [ag_iso, wfi_iso, vapor_puro, trocador, torres, hvac];
 
 const DURACAO = 5000; // Tempo em milissegundos para trocar a imagem (5 segundos)
 
-export function Card2({ imagens }: { imagens: string[] }) {
+export function Card({ imagens }: { imagens: string[] }) {
   const [indice, setIndice] = useState(0);
   const [pausado, setPausado] = useState(false);
   const [progresso, setProgresso] = useState(0);
@@ -145,7 +145,7 @@ export default function SecaoInsigth() {
   return (
     <div className="flex flex-col gap-6 md:flex-row md:items-center py-12 md:py-0">
       <div className="relative overflow-hidden rounded-2xl w-full md:w-160 h-68 md:h-160 border-2 border-primaria/50">
-        <Card2 imagens={imagens} />
+        <Card imagens={imagens} />
       </div>
 
       <div className="max-w-xl">
