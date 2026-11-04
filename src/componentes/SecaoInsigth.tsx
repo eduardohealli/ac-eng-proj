@@ -141,11 +141,12 @@ export function Card({ imagens }: { imagens: string[] }) {
 }
 
 export default function SecaoInsigth() {
-
   return (
-    <div className="flex flex-col gap-6 md:flex-row md:items-center py-12 md:py-0">
-      <div className="relative overflow-hidden rounded-2xl w-full md:w-160 h-68 md:h-160 border-2 border-primaria/50">
-        <Card imagens={imagens} />
+    <div className="flex flex-col gap-6 md:flex-row-reverse md:items-center py-12 md:py-0">
+      <div className="px-4 md:px-0">
+        <div className="relative overflow-hidden rounded-2xl w-full md:w-160 h-68 md:h-160 border-2 border-primaria/50">
+          <Card imagens={imagens} />
+        </div>
       </div>
 
       <div className="max-w-xl">

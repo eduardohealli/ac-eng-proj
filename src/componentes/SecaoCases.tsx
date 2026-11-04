@@ -8,6 +8,12 @@ import clinica from "../assets/projetos/clinica.png";
 
 const cases = [
   {
+    titulo: "Projeto de clínicas médicas",
+    descricao:
+      "Desenvolvimento de clínicas médicas, atendendo aos requisitos estabelecidos na RDC 50/2002.",
+    img: clinica,
+  },
+  {
     titulo: "Projeto de HVAC industrial",
     descricao:
       "Desenvolvimento de projeto HVAC para indústria farmacêutica, atendendo aos requisitos de qualidade estabelecidos na IN 35 da RDC 658/2019.",
@@ -37,12 +43,6 @@ const cases = [
       "Desenvolvimento de resfriamento industrial, atendendo aos requisitos de boas práticas de engenharia e eficiência energética.",
     img: torres,
   },
-    {
-    titulo: "Projeto de clínicas médicas",
-    descricao:
-      "Desenvolvimento de clínicas médicas, atendendo aos requisitos estabelecidos na RDC 50/2002.",
-    img: clinica,
-  },
 ];
 
 function Card({
@@ -58,7 +58,7 @@ function Card({
     <div className="group flex flex-col gap-4 max-w-xs">
       <div className="overflow-hidden">
         <img
-          className="w-full h:3xs rounded-lg object-cover transition-transform duration-700 group-hover:scale-105"
+          className="w-full h-48 rounded-lg object-cover transition-transform duration-700 group-hover:scale-105"
           src={img}
           alt={titulo}
         ></img>
@@ -79,7 +79,7 @@ export default function SecaoCases() {
         titulo={<h2 className="font-semibold">Cases de Sucesso</h2>}
         kickerSecudario={true}
       />
-      <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center items-center">
         {cases.map((caseItem, index) => (
           <Card
             key={index}

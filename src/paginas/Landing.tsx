@@ -4,6 +4,7 @@ import Rodape from "../componentes/Rodape";
 import SecaoCases from "../componentes/SecaoCases";
 import SecaoHero from "../componentes/SecaoHero";
 import SecaoInsigth from "../componentes/SecaoInsigth";
+import SecaoInsigthClinica from "../componentes/SecaoInsigthClinica";
 import ClientesParceiros from "../componentes/SecaoParceiros";
 import SecaoSolucoes from "../componentes/SecaoSolucoes";
 
@@ -25,10 +26,13 @@ export default function Landing() {
         kickerSecudario={true}
       />
       <div className="flex w-full justify-center items-center">
+        <SecaoInsigthClinica />
+      </div>
+      <div className="flex w-full justify-center items-center">
         <SecaoInsigth />
       </div>
       <ClientesParceiros></ClientesParceiros>
-      <SecaoCases/>
+      <SecaoCases />
       <CTA />
       <Rodape />
     </div>
