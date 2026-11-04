@@ -1,0 +1,78 @@
+[
+  {
+    "titulo": "Projeto de clínica",
+    "descricao": "Descrição do Projeto 1",
+    "imagens": [
+      "/projetos/atos/img (1).jpg",
+      "/projetos/atos/img (2).jpg",
+      "/projetos/atos/img (3).jpg",
+      "/projetos/atos/img (4).jpg",
+      "/projetos/atos/img (1).png",
+      "/projetos/atos/img (2).png",
+      "/projetos/atos/img (3).png",
+      "/projetos/atos/img (4).png"
+    ],
+    "categorias": ["Clínica", "MEP"]
+  },
+  {
+    "titulo": "Projeto industrial de HVAC",
+    "descricao": "Descrição do Projeto 1",
+    "imagens": [
+      "/projetos/hvac/img (1).jpg",
+      "/projetos/hvac/img (2).jpg",
+      "/projetos/hvac/img (3).jpg",
+      "/projetos/hvac/img (4).jpg",
+      "/projetos/hvac/img (5).jpg",
+      "/projetos/hvac/img (6).jpg",
+      "/projetos/hvac/img (7).jpg"
+    ],
+    "categorias": ["Industrial", "MEP"]
+  },
+  {
+    "titulo": "Projeto industrial de água gelada",
+    "descricao": "Descrição do Projeto 1",
+    "imagens": [
+      "/projetos/agua_gelada/img (1).jpg",
+      "/projetos/agua_gelada/img (2).jpg",
+      "/projetos/agua_gelada/img (3).jpg",
+      "/projetos/agua_gelada/img (4).jpg"
+    ],
+    "categorias": ["Industrial", "MEP"]
+  },
+  {
+    "titulo": "Projeto tubulações de processo",
+    "descricao": "Descrição do Projeto 1",
+    "imagens": [
+      "/projetos/processo/img (1).jpg",
+      "/projetos/processo/img (2).jpg"
+    ],
+    "categorias": ["Industrial", "MEP"]
+  },
+  {
+    "titulo": "Projeto resfriamento industrial",
+    "descricao": "Descrição do Projeto 1",
+    "imagens": [
+      "/projetos/resfriamento_industrial/img (1).jpg",
+      "/projetos/resfriamento_industrial/img (2).jpg"
+    ],
+    "categorias": ["Industrial", "MEP"]
+  },
+  {
+    "titulo": "Projeto distribuição de vapor puro",
+    "descricao": "Descrição do Projeto 1",
+    "imagens": [
+      "/projetos/vapor_puro/img (1).jpg",
+      "/projetos/vapor_puro/img (2).jpg"
+    ],
+    "categorias": ["Industrial", "MEP"]
+  },
+  {
+    "titulo": "Projeto distribuição de água para injetáveis (WFI)",
+    "descricao": "Descrição do Projeto 1",
+    "imagens": [
+      "/projetos/wfi/img (1).jpg",
+      "/projetos/wfi/img (2).jpg"
+    ],
+    "categorias": ["Industrial", "MEP"]
+  }
+]

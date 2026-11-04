@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primaria: #00244D;
+  --color-secundaria: #E3AC4F;
+  --color-terciaria: #4ADE80;
+  --color-quaternaria: #0A0A0A;
+  --color-superficie: #F5F5F3;
+  --font-sans: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
